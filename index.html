@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		hl{background-color: aqua;}
+		.extra hl{background-color: inherit;}
+		ml{font-style: italic;}
+		ml em{text-decoration: underline;}
+		kl{background-color: yellow;}
+	</style>
+</head>
+<body>
+	<form>
+	<table style="border:3px #cccccc solid;" cellpadding="10" border=‘1’>
+		<tr>
+			<th colspan="3"><kl>About--110306020</kl></th>
+		</tr>
+		<tr>
+			<th rowspan="3">
+				<img src="IMG_7720.jpg" width="50" height="70">
+				<br>
+				<ml><em>personal</em> photo</ml>
+			</th>
+			<hl><th clospan="2" class="extra" style="color:green">
+				<label>Name:
+					<input name="name" type="text" size="30"
+					maxlength="20">
+				</label>
+				<br>
+				<label>Gender:</label>
+					<input type="radio" name="gender" value="Male">Male
+					<input type="radio" name="gender" value="Female">Female
+					<input type="radio" name="gender" value="Other">Other
+			</hl></th></th>
+		</tr>
+		<tr>
+			<th><div><label>County:
+				<select name="County">
+					<option value="Taipei">Taipei</option>
+					<option value="Tainan">Tainan</option>
+					<option value="Taichung">Taichung</option>
+					<option value="Taoyuan">Taoyuan</option>
+				</select></label></div>
+			</th>
+			<th>Birthday:
+				<input id="date" type="date" size="30">
+			</th>
+
+		</tr>
+		<tr>
+			<th clospan="2">
+				<label>Email:</label>
+				<input type="email" id="email" name="email" size="30">
+			</th>
+		</tr>
+		<tr>
+			<th><ml>Hobby</ml></th>
+			<th colspan="2"><hl>
+				<input type="checkbox" name="hobby" value="Swimming">Swimming
+				<input type="checkbox" name="hobby" value="Volleyball">Volleyball
+				<input type="checkbox" name="hobby" value="Movie">Movie
+				<input type="checkbox" name="hobby" value="Game">Game
+				<input type="checkbox" name="hobby" value="Sleep">Sleep</hl></th>
+		</tr>
+		<tr>
+			<th><ml>Skill</ml></th>
+			<th colspan="2"><hl>
+				<input type="checkbox" name="skill" value="Java">Java
+				<input type="checkbox" name="skill" value="HTML">HTML
+				<input type="checkbox" name="skill" value="Python">Python
+				<input type="checkbox" name="skill" value="Microsoft office">Microsoft Office
+				<input type="checkbox" name="skill" value="Premiere">Premiere</hl>
+			</th>
+		</tr>
+		<tr>
+			<th><ml>Say Something</ml></th>
+			<th colspan="2">
+				<textarea rows="4" cols="50" placeholder="Say something here."></textarea>
+			</th>
+		</tr>
+		<tr>
+			<th colspan="3">
+				<input type="submit" value="submit">
+				<input type="reset" value="clear">
+			</th>
+		</tr>
+	</th>
+</tr>
+</table>
+	</form>
+</body>
+</html>
